@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <title>ahero's website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!-- Jumpscare Event -->
+    <title>Jumpscare Event</title>
+    <style>
+    .hidden {
+      display: none;
+    }
+    
+    #jumpscare-img {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999; /*Rendered on the top layer*/
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>ahero's website</h1>
+    </header>
+    <!-- WIP Navigation menu
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    </nav>
+    -->
+    <h2>i will put something here one day</h2>
+    <p>Song of the day:</p>
+    <img class="background-img" src="cow.png" id="background-img" onclick="jumpscare()" alt="Cow">
+    <img src="jumpscare.jpg" id="jumpscare-img" class="hidden" alt="Jumpscare">
+    <script src="jumpscare_script.js"></script>
+    <!-- add more shit here later -->
+    
+    <audio controls>
+    <source src="dax-joker-mega-mix.mp3" type="audio/mpeg">
+    <source src="dax-joker-mega-mix.mp3" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    
+    <audio id="jumpscare-noise" src="jumpscare-noise.mp3"></audio>
+    
+
+</body>
+</html>
